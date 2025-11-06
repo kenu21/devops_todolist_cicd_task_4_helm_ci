@@ -109,7 +109,7 @@ jobs:
         run: helm lint ./todoapp/
 
       - name: Template Helm
-        run: helm template todoapp ./helm-charts/todoapp -f ./helm-charts/todoapp/values.yaml
+        run: helm template todoapp ./todoapp -f ./todoapp/values.yaml
 
       - name: Package Helm
         run: helm package ./todoapp/
